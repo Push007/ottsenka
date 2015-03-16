@@ -1,0 +1,415 @@
+/**
+
+ # mega_arcon - Mega Arcon Template for Joomla! 1.7
+
+ # author 		OmegaTheme.com
+
+ # copyright 	Copyright(C) 2011 - OmegaTheme.com. All Rights Reserved.
+
+ # @license 	http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+
+ # Website: 	http://omegatheme.com
+
+ # Technical support: Forum - http://omegatheme.com/forum/
+
+**/
+
+/**------------------------------------------------------------------------
+
+ * file: menu.css 1.7.0 00001, May 2011 12:00:00Z OmegaTheme $
+
+ * package:	Mega Arcon Template
+
+ *------------------------------------------------------------------------*/
+
+ 
+
+#main-nav, 
+
+#main-nav ul.level0{
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+#main-nav li,
+
+#main-nav li li { /* all list items */
+
+	float: left;
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+/* -------- Top level -------- */
+
+#main-nav ul.level0 {
+
+	float: right;
+
+	margin: 0 0 0 0px;
+
+	padding: 0 0 0 0px;
+
+	height: 44px;
+
+}
+
+#main-nav ul.level0 li .menu_round {
+
+	float: left;
+
+	margin: 0 0 0 0px;
+
+	padding: 0 0 0 0px;
+
+}
+
+
+
+#main-nav ul.level0 li {
+
+	background: none;
+
+    cursor: pointer;
+
+    display: block;
+
+    float: left;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    position: relative;
+
+}
+
+#main-nav ul.level0 li .menu_round,
+
+#main-nav ul.level0 li .menu_round .menu_round{
+
+	width: 205px;
+
+	position: absolute;
+
+	z-index: 8;
+
+	height: auto;
+
+}
+
+#main-nav ul.level0 li .menu_round,
+
+#main-nav ul.level0 li .menu_round .menu_round,
+
+#main-nav ul.level0 li.sfhover .menu_round .menu_round{
+
+	left: -999em;
+
+}
+
+#main-nav ul.level0 li .menu_round .menu_round,
+
+#main-nav ul.level0 li.sfhover .menu_round .menu_round{
+
+	margin: -34px 0 0 204px; 
+
+}
+
+#main-nav ul.level0 li li {
+
+	padding: 0;
+
+	margin: 0;
+
+	width: 205px;
+
+}
+
+/* STYLING THE MENU
+
+-----------------------------------*/
+
+/* 1st level */
+
+#main-nav ul.level0 li a {
+
+	color: #FFFFFF;
+
+    display: block;
+
+    font-family: 'Trebuchet MS';
+
+    font-weight: normal;
+
+    height: 44px;
+
+    line-height: normal;
+
+    margin: 0;
+
+    padding: 0 0;
+
+    text-decoration: none;
+
+}
+
+#main-nav ul.level0 li a span{
+
+	font-size: 14px;
+
+    line-height: 35px;
+
+    padding: 0 15px 0 13px;
+
+    text-transform: uppercase;
+
+}
+
+#main-nav ul.level0 li {
+
+	margin: 0;
+
+	padding: 0 0px 0 5px;
+
+}
+
+#main-nav ul.level0 li.first,
+
+#main-nav ul.level0 li.first a{
+
+	margin-left: 0;
+
+	padding-left: 0;
+
+}
+
+#main-nav ul.level0 li.last,
+
+#main-nav ul.level0 li.last a{
+
+	padding-right: 0;
+
+}
+
+#main-nav ul.level0 li.active,
+
+#main-nav ul.level0 li.sfhover{
+
+	background: url(../images/mainmenu_left_active_bg.png) no-repeat;
+
+	padding-left: 5px;
+
+}
+
+
+
+#main-nav ul.level0 li a:hover,
+
+#main-nav ul.level0 li.active a,
+
+#main-nav ul.level0 li.active a:hover,
+
+#main-nav ul.level0 li.sfhover a{
+
+	background: url(../images/mainmenu_right_active_bg.png) no-repeat right top;
+
+	color: #0078b6;
+
+}
+
+/* 2nd level and above */
+
+#main-nav ul.level0 li li{
+
+	border-bottom: none;
+
+	margin: 0 0 0 0px;
+
+	padding: 0 0 0 0px;
+
+}
+
+#main-nav ul.level0 li .menu_round,
+
+#main-nav ul.level0 li.sfhover .menu_round{
+
+	float: left;
+
+	margin: 0 0 0 0px;
+
+	padding: 0 0 0 0px;
+
+}
+
+
+
+#main-nav li .menu_top,
+
+#main-nav li .menu_mid,
+
+#main-nav li .menu_bot{
+
+	width: 100%;
+
+	float: left;
+
+}
+
+#main-nav li .menu_mid{
+
+	margin-top: 0!important;
+
+	margin-top: -11px;
+
+}
+
+#main-nav li .menu_top{
+
+	height: 0px;
+
+}
+
+#main-nav li li .menu_top{
+
+	height: 0px;
+
+}
+
+#main-nav li .menu_bot{
+
+	height: 0px;
+
+}
+
+#main-nav li .menu_mid{
+
+	background: #E1DFDF;
+
+}
+
+#main-nav ul.level0 li li{
+
+	width: 205px;
+
+	padding: 0;
+
+	border-left: none;
+
+	border-right: none;
+
+	border-top: 1px solid #A86B57;
+
+/*	border-left: 1px solid #C7C7C7;
+
+	border-right: 1px solid #C7C7C7; */
+
+}
+
+#main-nav ul.level0 li.parent li.active,
+
+#main-nav ul.level0 li.parent li.sfhover{
+
+	background: #eeeeee;
+
+}
+
+#main-nav ul.level0 li.parent li.first{
+
+	border: none;
+
+}
+
+#main-nav ul.level0 li.parent li.first,
+
+#main-nav ul.level0 li.parent li.first.sfhover{
+
+	
+
+}
+
+#main-nav ul.level0 li li.sfhover{
+
+	padding: 0;
+
+}
+
+#main-nav ul.level0 li.parent ul li{
+
+	padding: 0;
+
+}
+
+#main-nav ul.level0 li.parent ul li a {
+
+	background: none;
+
+	height: auto;
+
+    color: #292929;
+
+    cursor: pointer;
+
+    display: block;
+
+    font-weight: normal;
+
+    line-height: normal;
+
+    margin: 0;
+
+    padding: 0;
+
+    text-transform: none;
+
+    width: auto;
+
+}
+
+#main-nav ul.level0 li.parent ul li.active li a{
+
+	color: #0078B6;
+
+}
+
+#main-nav ul.level0 li.parent ul li.active a,
+
+#main-nav ul.level0 li.parent ul li.active li.active a,
+
+#main-nav ul.level0 li.parent ul li a:hover,
+
+#main-nav ul.level0 li.parent ul li.active li a:hover{
+
+	color: #0078B6;
+
+}
+
+
+
+#main-nav ul.level0 li.parent ul li a span{
+
+	background: none;
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: normal;
+
+    height: auto;
+
+    line-height: normal;
+
+    padding: 8px 15px;
+
+    text-transform: none;
+
+}

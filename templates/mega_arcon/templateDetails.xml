@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>mega_arcon</name>
+	<creationDate>June 2011</creationDate>
+	<author>OmegaTheme.com</author>
+	<authorEmail>services@omegatheme.com</authorEmail>
+	<authorUrl>http://omegatheme.com</authorUrl>
+	<copyright>Copyright (C) 2008 - 2011 OmegaTheme. All Rights Reserved.</copyright>
+	<version>1.7.0</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[
+		<img src="../templates/mega_arcon/template_thumbnail.png" align="right" style="margin: 0 0 10px 10px;" alt="Mega Arcon template" />
+		<div style="font-size: 13px;">
+		<strong>Mega Arcon</strong> joomla 1.7 template from <strong>OmegaTheme</strong>. 
+		<br /><br /><strong>OmegaTheme</strong><br />Professional, clean and powerfull Joomla templates.<br /><a style="padding-left: 190px;" href="http://omegatheme.com/" title="OmegaTheme homepage">http://omegatheme.com</a>.
+		<br /><br /><strong>Omega Templates</strong><br />See a template product of all OmegaTheme templates.<br /><a href="http://omegatheme.com/omega-templates.html" title="Go to OmegaTheme templates overview">http://omegatheme.com/omega-templates.html</a>.
+		<br /><br /><strong>Omega New and Updates</strong><br />Read the News, updates, tutorials and get help for all OmegaTheme products.<br /><a href="http://omegatheme.com/new-and-updates.html" title="OmegaTheme templates News, updates and more">http://omegatheme.com/new-and-updates.html</a>.
+		</div>
+		]]>
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>lib</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>logo</position>
+		<position>main-nav</position>
+		<position>slideshow</position>
+		<position>extend</position>
+		<position>topbox-1</position>
+		<position>topbox-2</position>
+		<position>topbox-3</position>
+		<position>right</position>
+		<position>botmod-1</position>
+		<position>botmod-2</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="width_type" 
+					type="radio" 
+					default="px"
+					label="Set width type" 
+					description="Set the type of width of template, pixel (px) or percent (%)" >
+						<option value="px">Pixel (px)</option>
+						<option value="%">Percent (%)</option>
+				</field>
+				
+				<field name="width" 
+					type="text" 
+					size="20" 
+					default="960" 
+					label="Web site width" 
+					description="Enter the width for your Website. if Width type is Pixel (px) then (Example: 1000, 900... ). if width type is Percent (%) then (Example: 100, 95, 90... ) " />
+				
+				<field name="width_right" 
+					type="text" 
+					default="313" 
+					size="20" 
+					label="Width of right column" 
+					description="Enter the width for Right column. if Width type is Pixel (px) then (Example: 300, 200... ). if width type is Percent (%) then (Example: 30, 20... ) " />
+				
+				<field name="color_text" 
+					type="text" 
+					size="20" 
+					default="#474747" 
+					label="Color for text" 
+					description="Please select the color for your body in content that you would like to display. Default : #747474 " />
+				
+				<field name="color_links" 
+					type="text" 
+					size="20" 
+					default="#0078B6"
+					label="Color for links" 
+					description="Please select the color for your links in content that you would like to display. Default : #883727 " />
+				
+				<field name="fontSize" 
+					type="list" 
+					default="12px" 
+					label="Default font size" 
+					description="Set the default font size when template is loaded for the first time" >
+						<option value="10px">Smallest</option>
+						<option value="11px">Small</option>
+						<option value="12px">Normal</option>
+						<option value="13px">Big</option>
+						<option value="14px">Biggest</option>
+				</field>		
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content">
+    <name>Content - Photo Gallery Plugin</name>
+    <author>Hot Joomla Templates</author>
+    <creationDate>April 2010</creationDate>
+    <copyright>Copyright 2010 by ArhiNet d.o.o.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+    <authorEmail>info@hotjoomlatemplates.com</authorEmail>
+    <authorUrl>http://www.hotjoomlatemplates.com</authorUrl>
+    <version>2.5.3</version>
+    <description>Hot Photo Gallery - Commercial plugin from HotJoomlaTemplates.com</description>
+	
+    <files>
+        <filename plugin="photogallery">photogallery.php</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+    </files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_photogallery.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_photogallery.sys.ini</language>
+	</languages>
+	
+    <config>
+		<fields name="params" addfieldpath="/plugins/content/photogallery/elements">
+			<fieldset name="basic">
+				<field type="loader" />
+				<field name="enablejQuery" type="list" default="1" label="LABEL JQUERY" description="DESC JQUERY">
+					<option value="1">LABEL ENABLE</option>
+					<option value="0">LABEL DISABLE</option>
+				</field>
+				<field name="jQueryMode" type="list" default="1" label="LABEL NOCONFLICT" description="DESC NOCONFLICT">
+					<option value="1">LABEL ENABLE</option>
+					<option value="0">LABEL DISABLE</option>
+				</field>
+				<field name="imagesRow" type="text" default="3" label="LABEL IMAGES PER ROW" description="DESC IMAGES PER ROW"/>
+				<field name="borderWidth" type="text" default="1" label="LABEL BORDER WIDTH" description="DESC BORDER WIDTH"/> 
+				<field name="borderColor" type="hotcolor" default="#cccccc" label="LABEL BORDER COLOR" description="DESC BORDER COLOR"/>
+				<field name="borderHoverColor" type="hotcolor" default="#999999" label="LABEL BORDER HOVER COLOR" description="DESC BORDER HOVER COLOR"/> 
+				<field name="thumbsMarginH" type="text" default="10" label="LABEL HORIZ THUMB MARGINS" description="DESC HORIZ THUMB MARGINS"/> 
+				<field name="thumbsMarginV" type="text" default="10" label="LABEL VERT THUMB MARGINS" description="DESC VERT THUMB MARGINS"/>
+				<field name="thumbsPadding" type="text" default="3" label="LABEL PADDING" description="DESC PADDING"/> 
+				<field name="thumbsWidth" type="text" default="200" label="LABEL THUMB WIDTH" description="DESC THUMB WIDTH"/>
+				<field name="thumbsHeight" type="text" default="200" label="LABEL THUMB HEIGHT" description="DESC THUMB HEIGHT"/>
+				<field name="imageQuality" type="text"  default="80" label="LABEL THUMBS QUALITY" description="DESC THUMBS QUALITY"/>
+				<field type="hotspacerdesc" label="LABEL PHOTO GALLERY INFO" />
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

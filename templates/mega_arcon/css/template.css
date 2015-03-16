@@ -1,0 +1,436 @@
+/**
+ # mega_arcon - Mega Arcon Template for Joomla! 1.7
+ # author 		OmegaTheme.com
+ # copyright 	Copyright(C) 2011 - OmegaTheme.com. All Rights Reserved.
+ # @license 	http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Website: 	http://omegatheme.com
+ # Technical support: Forum - http://omegatheme.com/forum/
+**/
+/**------------------------------------------------------------------------
+ * file: template.css 1.7.0 00001, May 2011 12:00:00Z OmegaTheme $
+ * package:	Mega Arcon Template
+ *------------------------------------------------------------------------*/
+ 
+*{
+	margin:0;
+	padding:0;
+}
+body#mega_page{
+	background:  #FFF;
+	color: #474747;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+/*+++++++++++ @group Joomla Elements ++++++++++*/
+.mega-wrap-page{
+	overflow: hidden;
+}
+.blog-featured{
+	
+}
+.items-leading{
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+h1.mega-title,
+.items-leading h2.mega-title{
+	background: url(../images/heading_bg.png) no-repeat 0 bottom;s
+	color: #4F4F4F;
+    font-family: helvetica;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.items-leading h2.mega-title a{
+	color: #4F4F4F;
+}
+.items-leading h2.mega-title a:hover{
+	color: #B62B00;
+}
+.items-row{
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+}
+.items-row .item{
+	float: left;
+}
+.items-row .item h2.mega-title{
+	background: url(../images/heading_bg.png) no-repeat 0 bottom;s
+	color: #4F4F4F;
+    font-family: helvetica;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.items-row .item h2.mega-title a{
+	color: #4F4F4F;
+}
+.items-row .item h2.mega-title a:hover{
+	color: #B62B00;
+}
+
+/* Style for two column */
+.cols-2 .item{
+	width: 48%;
+}
+.cols-2 .column-2{
+	float: right;
+}
+
+/* Style for three column */
+.cols-3 .item{
+	width: 32%;
+	overflow: hidden;
+}
+.cols-3 .column-1{
+	
+}
+.cols-3 .column-2{
+	margin-left: 2%;
+}
+.cols-3 .column-3{
+	float: right;
+}
+
+/* Style for four column */
+.cols-4 .item{
+	width: 23%;
+	overflow: hidden;
+}
+.cols-4 .column-1{
+	
+}
+.cols-4 .column-2{
+	margin-left: 3%;
+}
+.cols-4 .column-3{
+	margin-left: 2%;
+}
+.cols-4 .column-4{
+	float: right;
+}
+
+/* Style for article view */
+.item-page{
+	
+}
+.item-page h2.mega-title{
+	background: url(../images/heading_bg.png) no-repeat 0 bottom;s
+	color: #4F4F4F;
+    font-family: helvetica;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.items-more h3{
+	font-size: 13px;
+}
+.mega-wrap-page ul,
+.mega-wrap-page ol{
+	padding-left: 10px;
+}
+.mega-wrap-page ul li,
+.mega-wrap-page ol li{
+	width: 98%;
+	float: left;
+	background: url("../images/doted.png") no-repeat 0 5px;
+	list-style: none;
+	padding: 0px 0 5px 10px;
+}
+ul.actions,
+dl.article-info{
+	width: 100%;
+	float: left;
+	padding: 0 0 5px 0;
+}
+ul.actions li{
+	background: none;
+	width: auto;
+	float: left;
+	padding: 0;
+	margin-right: 5px;
+	list-style: none;
+}
+dl.article-info dd.published{
+	font-size: 11px;
+	color: #999;
+}
+dd.createdby{
+	font-size: 11px;
+	color: #666;
+}
+/* Style for Category list page */
+.category-list{
+	
+}
+.categories-list ul{
+	padding-left: 10px;
+}
+.categories-list ul li{
+	background: url("../images/doted.png") no-repeat 0 10px;
+	width: 98%;
+	float: left;
+	list-style: none;
+	padding: 5px 0 5px 10px;
+}
+.cat-items{
+	
+}
+.display-limit{
+	padding-bottom: 10px;
+}
+table.category tr.cat-list-row1 td{
+	background: #EEE;
+}
+/* End */
+ul.pagenav{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+.item-page ul.pagenav li{
+	background: none repeat scroll 0 0 transparent;
+    display: inline;
+    float: none;
+    margin: 0 2px;
+    width: auto;
+}
+/* Style page counter */
+.pagination{
+	float: left;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+.pagination ul li{
+	width: auto;
+	float: none;
+	display: inline;
+	padding: 0;
+	margin: 0 3px;
+	text-align: center;
+}
+.pagination p.counter{
+	padding-bottom: 10px;
+}
+.pagination a.pagenav,
+.pagination span.pagenav{
+	height: 25px;
+	padding: 0px 8px;
+	border: 1px #ccc solid;
+	line-height: 25px;
+}
+.pagination span.pagenav{
+	background: #FFF;
+}
+.pagination a.pagenav{
+	background: #e0dcdb;
+}
+
+/* Readmore */
+p.readmore{
+	float: right;
+    height: 20px;
+    line-height: 1;
+    margin-top: 3px;
+    padding: 0;
+    text-align: right;
+}
+p.readmore a,
+p.readmore a.readmore {
+    background: url("../images/readmore_bg.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    width: 90px;
+}
+/* ++++++++++++++++++++ article-count +++++++++++++++++ */
+dl.article-count{
+	float: left;
+    margin: 5px 0;
+    width: 100%;
+}
+dl.article-count dt{
+	float: left;
+	margin-right: 10px;
+}
+dl.article-count dd{
+	
+}
+
+#it-lp {position: absolute; top: 0px; left: -5000px;}
+
+/* +++++++++++++++++++++ Style for contact form ++++++++++ */
+div.contact h2{
+	border-bottom: 1px solid #C8C8C8;
+	margin-bottom: 8px;
+    padding-bottom: 10px;
+}
+div.contact-form-custom{
+ 	width: 73%;
+ 	float: left;
+ }
+ div.contact-links-custom{
+ 	width: 25%;
+ 	float: right;
+ }
+
+div.contact div.contact-links,
+div.contact div.contact-miscinfo{
+	width: 100%;
+	float: right;
+}
+.contact-slider{
+	
+}
+.contact-slider .panel{
+	
+}
+.contact-form{
+	
+}
+.contact-form form#contact-form fieldset{
+	border: none;
+}
+.contact-form form#contact-form fieldset legend{
+	font-weight: normal;
+	font-size: 12px;
+}
+h2 span.contact-name{
+    color: #272727;
+    font-family: helvetica;
+    font-size: 13px;
+    line-height: normal;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.contact-form .contact-email{
+	
+}
+.contact-form form#contact-form dt,
+.contact-form form#contact-form dd{
+	width: 100%;
+	float: left;
+}
+.contact-form form#contact-form dt{
+	margin-top: 10px;
+}
+.contact-form form#contact-form dd input,
+.contact-form .contact-email div,
+.contact-form .contact-email div label,
+.contact-form .contact-email div input,
+.contact-form .contact-email div textarea{
+	width: 80%;
+	float: left;
+	margin-bottom: 8px;
+}
+.contact-form form#contact-form dt label#jform_contact_email_copy-lbl,
+.contact-form form#contact-form dd input#jform_contact_email_copy{
+	float: left;
+	width: auto;
+}
+.contact-form form#contact-form dt label#jform_contact_email_copy-lbl{
+	margin-left: 20px;
+}
+.contact-form form#contact-form dd input#jform_contact_email_copy{
+	margin-top: -14px;
+}
+.contact-form .contact-email div button{
+	float: left;
+}
+.contact-form .contact-email div input#contact-email-copy{
+	width: auto;
+	float: left;
+}
+/* Custom style for breadcrumbs mod */
+.breadcrumbs{
+	
+}
+.breadcrumbs img{
+	padding-top: 2px;
+}
+/* Style for Login form */
+.login {
+	line-height: 40px;
+}
+.login .login-fields label,
+.login .login-fields input{
+	
+}
+.login fieldset{
+	padding: 10px;
+}
+form#login-form{
+	text-align: left;
+}
+form#login-form input#modlgn-username,
+form#login-form input#modlgn-passwd{
+	width: 160px;
+	overflow: hidden;
+}
+fieldset.userdata{
+	border: none;
+}
+fieldset.userdata p{
+	padding: 5px 0;
+}
+form#member-registration{
+	
+}
+form#member-registration fieldset{
+	border: none;
+	line-height: 25px;
+}
+/* Custom style for joomla search */
+.main_content_i .search{
+	width: 100%;
+}
+form#searchForm{
+	padding:10px;
+	line-height:30px;
+}
+.search{
+	float: right;
+	line-height: 25px;
+	padding: 2px 0 3px 5px;
+	right: 0;
+	text-align: left;
+}
+.search_i{
+	
+}
+input#mod-search-searchword{
+	width:150px;
+	background: #565656;
+	height:17px;
+	padding:5px 0;
+	float:left;
+	border: none;
+	color: #fff;
+	text-transform: capitalize;
+}
+.search span.submit{
+	background: #e69d00;
+	height: 17px;
+	padding: 5px;
+	margin-left: 5px;
+	float:right;
+}
+.search span input.button{
+	background: #e69d00;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+/* End */

@@ -1,0 +1,178 @@
+/**
+ # mega_arcon - Mega Arcon Template for Joomla! 1.7
+ # author 		OmegaTheme.com
+ # copyright 	Copyright(C) 2011 - OmegaTheme.com. All Rights Reserved.
+ # @license 	http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Website: 	http://omegatheme.com
+ # Technical support: Forum - http://omegatheme.com/forum/
+**/
+/**------------------------------------------------------------------------
+ * file: typography.css 1.7.0 00001, May 2011 12:00:00Z OmegaTheme $
+ * package:	Mega Arcon Template
+ *------------------------------------------------------------------------*/
+ 
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 160%;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+a {
+	color: #883727;
+	font-size: 1em;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img{
+	border:none;
+}
+p {
+	line-height: 1.7em;
+	padding: 3px 0;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; line-height: normal}
+h3 { font-size: 1.7em; line-height: 1; margin-bottom: 1em; line-height: normal }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em;  line-height: normal}
+h5 { font-size: 1em; margin-bottom: 1.7em;  line-height: normal}
+h6 { font-size: 1em;  line-height: normal}
+ 
+
+ul { padding-left: 0; }
+
+ul li { list-style: none; margin-left: 0; }
+
+li ol { margin: 0;}
+
+ul, ol{ 
+	margin:  0; 
+	padding: 0;
+}
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+dl  { margin: 0; }
+dl dt { font-weight: bold; }
+dd { margin: 0em;}
+
+pre {
+	padding: 10px;
+	border: 1px solid #CEE0E4;
+	color: #02576B;
+}
+blockquote {
+/*	background: url("../images/blockquote.png") no-repeat scroll 10px 13px transparent; */
+    border: 1px solid #CEE0E4;
+    color: #02576B;
+    font-size: 110%;
+    font-style: italic;
+    overflow: hidden;
+    line-height: 150%;
+    margin: 5px 0;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+ }
+ blockquote:before { content: open-quote; font-weight: bold; }
+ blockquote:after { content: close-quote; font-weight: bold; }
+/* ---------------------- Style for Form---------------------- */
+label { 
+	font-weight: bold;
+}
+fieldset{ 
+	padding: 0; 
+	margin: 0 0 1em 0; 
+	border: 1px solid #ccc; 
+}
+legend{ 
+	font-weight: bold; 
+	font-size: 1.2em;
+}
+input.text, input.title,
+textarea {
+  background-color:#FFFFFF;
+  border:1px solid #BBBBBB;
+}
+
+/* ---------------------- Style for table tr td --------------------- */
+table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 5px;
+}
+table tr.odd{
+	
+}
+table tr.odd td{
+	background: #FFF;
+}
+table tr.even td{
+	background: #EEE;
+}
+th  { 
+	font-weight: bold; 
+}
+thead th{ 
+	background: #CCC;
+}
+th, td, caption{ 
+	padding: 4px 5px 4px 5px;
+}
+
+tbody tr td{ 
+/*	background: #EEEEEE; */
+}
+tfoot{ 
+	font-style: italic;
+}
+caption{ 
+	background: #EFEFEF;
+}
+/* @end */
+
+/*-------------------- @group Notice Styles -------------------*/
+span.alert {
+	color: #c00;
+	border-top: 3px solid #FE7B7A;
+	border-bottom: 3px solid #FE7B7A;
+}
+span.info {
+	color: #0055BB;
+	border-top: 3px solid #629de3;
+	border-bottom: 3px solid #629de3;
+}
+span.note {
+	color: #B79000;
+	border-top: 3px solid #fde179;
+	border-bottom: 3px solid #fde179;
+}
+span.download {
+	color: #57861A;
+	border-top: 3px solid #c2df88;
+	border-bottom: 3px solid #c2df88;
+}
+
+span.alert,
+span.info,
+span.download,
+span.note {
+	display: block;
+	padding: 10px 10px 10px 45px;
+	margin: 15px 0;	
+}
+/* @end */

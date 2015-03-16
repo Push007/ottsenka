@@ -1,0 +1,54 @@
+/**
+ # mega_arcon - Mega Arcon Template for Joomla! 1.7
+ # author 		OmegaTheme.com
+ # copyright 	Copyright(C) 2011 - OmegaTheme.com. All Rights Reserved.
+ # @license 	http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Website: 	http://omegatheme.com
+ # Technical support: Forum - http://omegatheme.com/forum/
+**/
+/**------------------------------------------------------------------------
+ * file: custom.css 1.7.0 00001, June 2011 12:00:00Z OmegaTheme $
+ * package:	Mega Arcon Template
+ *------------------------------------------------------------------------*/
+ 
+ /* Custom style for Mini News Module */
+.mega_news p.createddate{
+	background: #fdf6e9; 
+	border: 1px solid #ead4aa;
+	margin: 10px 0;
+}
+.mega_news p.createddate span{
+	color: #8c7620;
+	padding: 0 10px;
+}
+.mega_readmore a.mega_readm{
+	background: url(../images/botbox_arrow.jpg) no-repeat 0 5px;
+	color: #020100;
+	font-weight: bold;
+	float: left;
+	padding-left: 10px;
+}
+
+/* Style for module custom */
+.mega_tops ul.custom li a,
+.mega_tops .module_destination ul li a,
+.mega_tops .module_destination ul.custom li a{
+	
+}
+.mega_tops ul.custom li span,
+.mega_tops .module_destination ul li span,
+.mega_tops .module_destination ul.custom li span{
+	left: 100px;
+    position: absolute;
+    top: 8px;
+}
+
+
+
+
+
+
+
+
+
+

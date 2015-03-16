@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7.0"
+	client="site"
+	method="upgrade">
+	<name>Mega Horizontal Scroller</name>
+	<author>OmegaTheme.com</author>
+	<creationDate>Feb 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 OmegaTheme. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>services@omegatheme.com</authorEmail>
+	<authorUrl>http://omegatheme.com</authorUrl>
+	<version>1.7.0</version>
+	<description>MEGA_HORIZONTAL_SCROLLER_DESC</description>
+	<files>
+		<filename
+			module="mod_megahorizontalscroller">mod_megahorizontalscroller.php</filename>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_megahorizontalscroller.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx"
+					type="text"
+					label="Moduleclass sufix"
+					description="MODULECLASS_SUFIX_DESC" />
+					
+				<field name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					size="10"
+					label="Select category"
+					description="SELECT_CATEGORY_DESC" >
+					<option value="">All Category</option>
+				</field>
+				
+				<field name="item_title"
+					type="radio"
+					default="1"
+					label="Title item"
+					description="TITLE_OF_ITEM_DESC">
+					<option
+						value="1">JYES</option>
+					<option
+						value="0">JNO</option>
+				</field>
+
+				<field name="link_titles"
+					type="list"
+					default="1"
+					label="Link title"
+					description="LINK_OF_TITLE_DESC">
+					<option
+						value="">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				
+				<field name="number_of_article"
+					type="text"
+					default="5"							
+					label="Number of item"
+					description="NUMBER_ARTICLES_TO_DISPLAY_DESC" />
+					
+				<field  name="introtext_limit" 
+					type="text" 
+					default="200"
+					label="Introtext Limited"
+					description="INTROTEXT_LITMITED_DESC" />
+					
+				<field name="show_readmore"
+					type="radio"
+					default="1"
+					label="Show readmore"
+					description="SHOW_READMORE_DESC">
+					<option
+						value="0">JHIDE</option>
+					<option
+						value="1">JSHOW</option>
+				</field>
+				
+				<field name="custom_text_readmore"
+					type="text"
+					default="View more..."
+					label="Custom text of Readmore"
+					description="CUSTOM_TEXT_FOR_READMORE_DESC"/>
+					
+				<field name="ordering"
+					type="list"
+					default="a.publish_up"					
+					label="Ordering"
+					description="ORDERING_DESC">
+					<option
+						value="a.publish_up">Published date</option>
+					<option
+						value="a.created">Created date</option>
+					<option
+						value="a.ordering">Ordering</option>						
+					<option
+						value="rand()">Random</option>
+				</field>
+					
+				<field name="panel_width" 
+					type="text" 
+					default="940" 
+					label="Panel width" 
+					description="PANEL_WIDTH_DESC" />
+					
+				<field name="panel_height" 
+					type="text" 
+					default="350" 
+					label="Panel height" 
+					description="PANEL_HEIGHT_DESC" />
+				
+				<field name="show_filmstrip" 
+					type="radio" 
+					default="1" 
+					label="Show filmstrip" 
+					description="SHOW_FILMSTRIP_DESC">	
+					<option value="0">No</option>	
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="filmstrip_position" 
+					type="list" 
+					default="bottom" 
+					label="Filmstrip position" 
+					description="FILMSTRIP_POSITION_DESC">	
+					<option value="top">Top</option>
+					<option value="bottom">Bottom</option>	
+				</field>
+				
+				<field name="default_images"
+					type="text"
+					default="modules/mod_megahorizontalscroller/assets/images/default.jpg"
+					label="Path of default images"
+					description="PATH_OF_DEFAULT_IMAGES_DESC"/>
+				
+				<field name="easing" 
+					type="list" 
+					default="easeInOutBack"
+					label="Filmstrip effect" 
+					description="FILMSTRIP_EFFECT_DESC">	
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="swing">swing</option>
+				</field>
+				
+				<field name="frame_space_top" 
+					type="text" 
+					default="0" 
+					label="Filmstrip space top" 
+					description="FILMSTRIP_TOP_SPACE_DESC" />
+					
+				<field name="frame_width" 
+					type="text" 
+					default="93" 
+					label="Frame width" 
+					description="FRAME_WIDTH_DESC" />
+					
+				<field name="frame_height" 
+					type ="text" 
+					default="63" 
+					label="Frame height" 
+					description="FRAME_HEIGHT_DESC" />
+				
+				<field name="frame_background_type" 
+					type="radio" 
+					default="0" 
+					label="Frame background type" 
+					description="FRAME_BACKGROUND_TYPE_DESC">	
+					<option value="0">Transparent</option>	
+					<option value="1">Color</option>
+				</field>
+				
+				<field name="background_color" 
+					type="text" 
+					default="#C8CEDE" 
+					label="Background color" 
+					description="BACKGROUND_COLOR_DESC" />
+				
+				<field name="show_captions" 
+					type="radio" 
+					default="0" 
+					label="Show caption" 
+					description="SHOW_CAPTION_DESC">	
+					<option value="0">No</option>	
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="caption_text_color" 
+					type ="text" 
+					default="#FFFFFF" 
+					label="Caption text color" 
+					description="CAPTION_TEXT_COLOR_DESC" />
+					
+				<field name="overlay_position" 
+					type="list" 
+					default="left" 
+					label="Overlay position" 
+					description="OVERLAY_POSITION_DESC">	
+					<option value="top">Top</option>
+					<option value="bottom">Bottom</option>
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>
+				
+				<field name="overlay_width" 
+					type="text" 
+					default="456" 
+					label="Overlay width " 
+					description="OVERLAY_WIDTH_DESC" />
+				
+				<field name="overlay_height" 
+					type="text" 
+					default="190" 
+					label="Overlay height" 
+					description="OVERLAY_HEIGHT_DESC" />
+				
+				<field name="overlay_color" 
+					type ="text" 
+					default="#000000" 
+					label="Overlay color" 
+					description="OVERLAY_COLOR_DESC" />
+					
+				<field name="overlay_opacity" 
+					type ="text" 
+					default="0.6" 
+					label="Overlay opacity" 
+					description="OVERLAY_OPACITY_DESC" />
+					
+				<field name="overlay_text_color" 
+					type ="text" 
+					default="#FFFFFF" 
+					label="Overlay text color" 
+					description="OVERLAY_TEXT_COLOR_DESC" />
+					
+				<field name="overlay_font_size" 
+					type ="text" 
+					default="12px" 
+					label="Overlay font size" 
+					description="OVERLAY_FONT_SIZE_DESC" />
+					
+				<field name="overlay_heading_color" 
+					type ="text" 
+					default="#FFFFFF" 
+					label="Overlay heading color" 
+					description="OVERLAY_HEADING_COLOR_DESC" />
+					
+				<field name="overlay_link_color" 
+					type ="text" 
+					default="#0078B6" 
+					label="Overlay link color" 
+					description="OVERLAY_LINK_COLOR_DESC" />
+				
+				<field name="overlay_nav_width" 
+					type="text" 
+					default="39" 
+					label="Overlay NAV width" 
+					description="OVERLAY_NAV_WIDTH_DESC" />
+				
+				<field name="overlay_nav_height" 
+					type="text" 
+					default="39" 
+					label="Overlay NAV height" 
+					description="OVERLAY_NAV_HEIGHT_DESC" />
+					
+				<field name="transition_speed" 
+					type="text" 
+					default="1000" 
+					label="Transition speed" 
+					description="TRANSITION_SPEED_DESC" />
+					
+				<field name="transition_interval" 
+					type="text" 
+					default="4000" 
+					label="Transition interval" 
+					description="TRANSITION_INTERVAL_DESC" />
+				
+				<field name="load_jquery" 
+					type="radio" 
+					default="1" 
+					label="Load jquery" 
+					description="LOAD_JQUERY_DESC">	
+					<option value="0">No</option>	
+					<option value="1">Yes</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
